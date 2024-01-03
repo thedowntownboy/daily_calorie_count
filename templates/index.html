@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+         background-image: url("{{ url_for('static', filename='images/1.jpg') }}");
+         background-size: cover;
+        }
+        h1, p{
+            color: White;
+        }
+
+        .glow {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF3131, 0 0 40px #FF3131, 0 0 50px #FF3131, 0 0 60px #FF3131, 0 0 70px #FF3131;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #7CFC00, 0 0 40px #7CFC00, 0 0 50px #7CFC00, 0 0 60px #7CFC00, 0 0 70px #7CFC00, 0 0 80px #7CFC00;
+  }
+}
+
+    </style>
+
+</head>
+<body>
+
+
+    <h1>Hello</h1>
+    <p>Ready to check your calories consumption for today..</p>
+    <a href="/calories_page" class="glow">Check your Calories Here</a>
+
+</body>
+</html>

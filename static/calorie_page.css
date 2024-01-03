@@ -1,0 +1,42 @@
+body{
+
+    background-color: Black;
+    padding: 10px 15px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+p{
+    color: Ivory;
+    padding: 12px 2px;
+    margin: 1px 3px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+input[type=text]{
+    width: 98%;
+    padding: 7px 10px;
+    margin: 3px;
+
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 7px 10px;
+    margin: 3px;
+    border-radius: 14px;
+    background-color: LawnGreen;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+label {
+  color: white;
+  padding: 0px 10px;
+
+}

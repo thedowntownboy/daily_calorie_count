@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/calorie_page.css">
+</head>
+<body>
+    <h2> Calories Calculation Form</h2>
+    <p>Fill in the Form and click the button to know how many calories you need.</p>
+    <p>let's get some info about you first!</p>
+
+    <form action="/calories_page" method="post">
+        {{cform.weight.label}} {{cform.weight(required='required')}} <br>
+        {{cform.height.label}} {{cform.height(required='required')}} <br>
+        {{cform.age.label}} {{cform.age(required='required')}}       <br>
+    <hr>
+    <p>Today's weather counts too.</p>
+    <p>Tell us where you are so we include todays temperature into the calculation</p>
+        {{cform.city.label}} {{cform.city(required='required')}}       <br>
+        {{cform.country.label}} {{cform.country(required='required')}} <br>
+        {{cform.button}}
+</form>
+    <br>
+        {% if result %}
+           <p> Today's Temperature in {{city}}, {{country}} is {{temperature}}°C</p>
+           <p> your today's calorie intake is {{your_calorie}} cal.</p>
+        {% endif %}
+</body>
+</html>

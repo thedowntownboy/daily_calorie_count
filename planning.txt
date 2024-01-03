@@ -1,0 +1,15 @@
+App Title: Calories count app
+App description: this is a web app based on flask which has a home page and a form page. The form page takes
+the user information and also asks user current location. The information given by the user calculates the
+total intake calorie for the day and displays it below the form
+
+classes:
+      HomePage:
+
+      CaloriePage:
+
+      CalorieForm:
+
+      CalorieConsumption(WeatherLocation):
+
+      WeatherLocation:
