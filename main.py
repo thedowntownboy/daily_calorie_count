@@ -54,4 +54,4 @@ class CalorieConsumption(WeatherLocation):
 app.add_url_rule('/', view_func=HomePage.as_view("home_page"))
 app.add_url_rule('/calories_page',
                  view_func=CaloriePage.as_view("calories_page"))
-app.run()
+
